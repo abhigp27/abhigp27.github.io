@@ -173,25 +173,16 @@
         <div class="container">
             <h2 class="text-center mb-4">Contact Me</h2>
             <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <form action="https://formsubmit.co/abhigp27@gmail.com" method="POST">
-                        <div class="mb-3">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
-                        </div>
-                        <!-- Honeypot to prevent spam -->
-                        <input type="text" name="_honey" style="display:none">
-                        <!-- Disable captcha -->
-                        <input type="hidden" name="_captcha" value="false">
-                        <!-- Redirect after submission -->
-                        <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
-                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                    </form>
+                <div class="col-md-8 mx-auto text-center">
+                    <p class="mb-4">Feel free to reach out to me via email or download my resume:</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="mailto:abhigp27@gmail.com" class="btn btn-primary btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Send Email
+                        </a>
+                        <a href="assets/Abhishek_Gupta_Resume.pdf" download class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-file-download me-2"></i>Download Resume
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
