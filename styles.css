@@ -1,0 +1,96 @@
+/* Custom CSS for Personal Website */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin-top: 56px; /* Accommodate fixed navbar */
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100vh;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 10;
+}
+
+.social-links a {
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+#skills .card, #projects .card {
+    transition: all 0.3s ease;
+}
+
+#skills .card:hover, #projects .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+    }
+}
+
+/* Form styling */
+#contact form input,
+#contact form textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#contact form .btn-primary {
+    background-color: #667eea;
+    border-color: #667eea;
+    transition: all 0.3s ease;
+}
+
+#contact form .btn-primary:hover {
+    background-color: #764ba2;
+    border-color: #764ba2;
+}
+
+/* Custom Topmate icon */
+.topmate-icon {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background: white;
+    color: #000;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.topmate-icon:hover {
+    transform: scale(1.2);
+}
