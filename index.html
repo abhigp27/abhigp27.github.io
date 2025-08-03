@@ -16,31 +16,31 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand" href="#">Abhishek Gupta</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#" aria-label="Abhishek Gupta - Home">Abhishek Gupta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <ul class="navbar-nav ms-auto" role="menubar">
+                    <li class="nav-item" role="none"><a class="nav-link" href="#home" role="menuitem">Home</a></li>
+                    <li class="nav-item" role="none"><a class="nav-link" href="#about" role="menuitem">About</a></li>
+                    <li class="nav-item" role="none"><a class="nav-link" href="#skills" role="menuitem">Skills</a></li>
+                    <li class="nav-item" role="none"><a class="nav-link" href="#projects" role="menuitem">Projects</a></li>
+                    <li class="nav-item" role="none"><a class="nav-link" href="#education" role="menuitem">Education</a></li>
+                    <li class="nav-item" role="none"><a class="nav-link" href="#contact" role="menuitem">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="hero-section text-center text-white d-flex align-items-center">
+    <section id="home" class="hero-section text-center text-white d-flex align-items-center" role="banner">
         <div class="container">
-            <h1 class="display-3 mb-3">Abhishek Gupta</h1>
-            <p class="lead mb-4">Staff Engineer @ Walmart Global Tech | Distributed Systems</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/abhigp" class="text-white mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+            <h1 class="display-3 mb-3 fade-in-up">Abhishek Gupta</h1>
+            <p class="lead mb-4 fade-in-up">Staff Engineer @ Walmart Global Tech | Distributed Systems</p>
+            <div class="social-links fade-in-up" aria-label="Social media links">
+                <a href="https://www.linkedin.com/in/abhigp" class="text-white mx-2" aria-label="LinkedIn Profile" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
                 <!-- <a href="https://topmate.io/abhigp" class="text-white mx-2"><span class="topmate-icon">T</span></a> -->
             </div>
         </div>
@@ -176,11 +176,11 @@
                 <div class="col-md-8 mx-auto text-center">
                     <p class="mb-4">Feel free to reach out to me via email or download my resume:</p>
                     <div class="d-flex justify-content-center gap-3">
-                        <a href="mailto:abhigp27@gmail.com" class="btn btn-primary btn-lg">
-                            <i class="fas fa-envelope me-2"></i>Send Email
+                        <a href="mailto:abhigp27@gmail.com" class="btn btn-primary btn-lg" aria-label="Send email to Abhishek Gupta">
+                            <i class="fas fa-envelope me-2" aria-hidden="true"></i>Send Email
                         </a>
-                        <a href="assets/Abhishek_Gupta_Resume.pdf" download class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-file-download me-2"></i>Download Resume
+                        <a href="assets/Abhishek_Gupta_Resume.pdf" download class="btn btn-outline-light btn-lg" aria-label="Download Abhishek Gupta's resume">
+                            <i class="fas fa-file-download me-2" aria-hidden="true"></i>Download Resume
                         </a>
                     </div>
                 </div>
