@@ -275,32 +275,49 @@ section {
 }
 
 /* Modern Skills Section */
-#skills .col-md-3 {
-    margin-bottom: var(--spacing-xl);
-}
-
-#skills h4 {
-    color: var(--primary-color);
+.skill-badge {
+    font-size: 0.9rem;
+    padding: 0.6em 1.2em;
     font-weight: 600;
-    margin-bottom: var(--spacing-md);
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--primary-dark);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50rem;
+    cursor: default;
+    display: inline-block;
+}
+
+.skill-badge:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+    border-color: var(--primary-color);
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl) !important;
+}
+
+#skills .card {
+    transition: all 0.3s ease;
+}
+
+#skills .card:hover .text-primary {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Timeline/Experience List Styling */
+.card-text .list-unstyled li {
     position: relative;
-}
-
-#skills h4::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 2px;
-    background: var(--accent-color);
-    border-radius: var(--radius-sm);
-}
-
-#skills p {
-    color: var(--text-secondary);
-    font-weight: 500;
+    padding-left: 0.5rem;
 }
 
 /* Modern Navigation */
