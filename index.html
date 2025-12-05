@@ -54,16 +54,18 @@
         </div>
     </section>
 
-    <section id="about" class="py-5">
-        <div class="container">
+    <section id="about" class="py-5 position-relative">
+        <div class="container position-relative z-2">
             <h2 class="text-center mb-4">About Me</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <p class="text-center">
-                        With over 13 years of experience in software engineering, I specialize in backend development and distributed systems. 
-                        Currently serving as a Staff Software Engineer at Walmart Global Tech, I lead a team of 6 engineers and architect scalable solutions. 
-                        My expertise spans across Java, Golang, and distributed systems, with a proven track record at companies like Walmart, Visa, and Microsoft.
-                    </p>
+                    <div class="p-4 bg-white rounded-3 shadow-sm border border-light">
+                        <p class="text-center lead text-secondary mb-0">
+                            With over 13 years of experience in software engineering, I specialize in backend development and distributed systems.
+                            Currently serving as a Staff Software Engineer at Walmart Global Tech, I lead a team of 6 engineers and architect scalable solutions.
+                            My expertise spans across Java, Golang, and distributed systems, with a proven track record at companies like Walmart, Visa, and Microsoft.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,23 +73,60 @@
 
     <section id="skills" class="bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Technical Skills</h2>
-            <div class="row">
-                <div class="col-md-3 text-center mb-4">
-                    <h4>Languages</h4>
-                    <p>Java, Golang, Scala</p>
+            <h2 class="text-center mb-5">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-code fa-2x text-primary p-3 bg-light rounded-circle"></i>
+                        </div>
+                        <h4 class="h5 mb-3">Languages</h4>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge skill-badge">Java</span>
+                            <span class="badge skill-badge">Golang</span>
+                            <span class="badge skill-badge">Scala</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 text-center mb-4">
-                    <h4>Frameworks</h4>
-                    <p>Spring, Akka, Angular, React.js</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-layer-group fa-2x text-primary p-3 bg-light rounded-circle"></i>
+                        </div>
+                        <h4 class="h5 mb-3">Frameworks</h4>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge skill-badge">Spring</span>
+                            <span class="badge skill-badge">Akka</span>
+                            <span class="badge skill-badge">Angular</span>
+                            <span class="badge skill-badge">React.js</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 text-center mb-4">
-                    <h4>Databases</h4>
-                    <p>Cassandra, MySQL, ElasticSearch</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-database fa-2x text-primary p-3 bg-light rounded-circle"></i>
+                        </div>
+                        <h4 class="h5 mb-3">Databases</h4>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge skill-badge">Cassandra</span>
+                            <span class="badge skill-badge">MySQL</span>
+                            <span class="badge skill-badge">ElasticSearch</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 text-center mb-4">
-                    <h4>Tools & Technologies</h4>
-                    <p>GraphQL, Prometheus, Git</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-tools fa-2x text-primary p-3 bg-light rounded-circle"></i>
+                        </div>
+                        <h4 class="h5 mb-3">Tools</h4>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge skill-badge">GraphQL</span>
+                            <span class="badge skill-badge">Prometheus</span>
+                            <span class="badge skill-badge">Git</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,57 +134,113 @@
 
     <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Professional Experience</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Walmart Global Tech (2019 - Present)</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Staff Software Engineer</h6>
-                            <p class="card-text">
-                                • Leading Catalog Item Read Service project<br>
-                                • Managing team of 6 engineers<br>
-                                • Tech Stack: Java, Scala, Spring, Cassandra, ElasticSearch, Akka, GraphQL
-                            </p>
+            <h2 class="text-center mb-5">Professional Experience</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title mb-0">Walmart Global Tech</h5>
+                                <span class="badge bg-light text-dark border">2019 - Present</span>
+                            </div>
+                            <h6 class="card-subtitle mb-3 text-primary">Staff Software Engineer</h6>
+                            <div class="card-text mb-4">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2 d-flex"><i class="fas fa-check-circle text-primary mt-1 me-2 small"></i><span>Leading Catalog Item Read Service project</span></li>
+                                    <li class="mb-2 d-flex"><i class="fas fa-check-circle text-primary mt-1 me-2 small"></i><span>Managing team of 6 engineers</span></li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <small class="text-uppercase text-muted fw-bold d-block mb-2" style="font-size: 0.7rem; letter-spacing: 0.5px;">Tech Stack</small>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-light text-secondary border">Java</span>
+                                    <span class="badge bg-light text-secondary border">Scala</span>
+                                    <span class="badge bg-light text-secondary border">Spring</span>
+                                    <span class="badge bg-light text-secondary border">Cassandra</span>
+                                    <span class="badge bg-light text-secondary border">ElasticSearch</span>
+                                    <span class="badge bg-light text-secondary border">Akka</span>
+                                    <span class="badge bg-light text-secondary border">GraphQL</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Visa (2017 - 2019)</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Sr. Software Engineer</h6>
-                            <p class="card-text">
-                                • Developed Open VisaNet distributed system<br>
-                                • Built backend services in Golang<br>
-                                • Frontend development using Angular
-                            </p>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title mb-0">Visa</h5>
+                                <span class="badge bg-light text-dark border">2017 - 2019</span>
+                            </div>
+                            <h6 class="card-subtitle mb-3 text-primary">Sr. Software Engineer</h6>
+                            <div class="card-text mb-4">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2 d-flex"><i class="fas fa-check-circle text-primary mt-1 me-2 small"></i><span>Developed Open VisaNet distributed system</span></li>
+                                    <li class="mb-2 d-flex"><i class="fas fa-check-circle text-primary mt-1 me-2 small"></i><span>Built backend services in Golang</span></li>
+                                    <li class="mb-2 d-flex"><i class="fas fa-check-circle text-primary mt-1 me-2 small"></i><span>Frontend development using Angular</span></li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <small class="text-uppercase text-muted fw-bold d-block mb-2" style="font-size: 0.7rem; letter-spacing: 0.5px;">Tech Stack</small>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-light text-secondary border">Golang</span>
+                                    <span class="badge bg-light text-secondary border">Angular</span>
+                                    <span class="badge bg-light text-secondary border">Distributed Systems</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Microsoft (2014 - 2017)</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Software Development Engineer</h6>
-                            <p class="card-text">
-                                • Developed Microsoft Dynamics CRM<br>
-                                • Built Interactive Service Hub (ISH)<br>
-                                • Created App Designer for customized CRM apps
-                            </p>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title mb-0">Microsoft</h5>
+                                <span class="badge bg-light text-dark border">2014 - 2017</span>
+                            </div>
+                            <h6 class="card-subtitle mb-3 text-primary">Software Development Engineer</h6>
+                            <div class="card-text mb-4">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2 d-flex"><i class="fas fa-check-circle text-primary mt-1 me-2 small"></i><span>Developed Microsoft Dynamics CRM</span></li>
+                                    <li class="mb-2 d-flex"><i class="fas fa-check-circle text-primary mt-1 me-2 small"></i><span>Built Interactive Service Hub (ISH)</span></li>
+                                    <li class="mb-2 d-flex"><i class="fas fa-check-circle text-primary mt-1 me-2 small"></i><span>Created App Designer for customized CRM apps</span></li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <small class="text-uppercase text-muted fw-bold d-block mb-2" style="font-size: 0.7rem; letter-spacing: 0.5px;">Tech Stack</small>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-light text-secondary border">C#</span>
+                                    <span class="badge bg-light text-secondary border">.NET</span>
+                                    <span class="badge bg-light text-secondary border">Dynamics CRM</span>
+                                    <span class="badge bg-light text-secondary border">JavaScript</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Aricent Group (2012 - 2014)</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Software Engineer</h6>
-                            <p class="card-text">
-                                • Developed FRC-CWI system<br>
-                                • Managed Toll-Free number system<br>
-                                • Started as intern and grew to full-time role
-                            </p>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title mb-0">Aricent Group</h5>
+                                <span class="badge bg-light text-dark border">2012 - 2014</span>
+                            </div>
+                            <h6 class="card-subtitle mb-3 text-primary">Software Engineer</h6>
+                            <div class="card-text mb-4">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2 d-flex"><i class="fas fa-check-circle text-primary mt-1 me-2 small"></i><span>Developed FRC-CWI system</span></li>
+                                    <li class="mb-2 d-flex"><i class="fas fa-check-circle text-primary mt-1 me-2 small"></i><span>Managed Toll-Free number system</span></li>
+                                    <li class="mb-2 d-flex"><i class="fas fa-check-circle text-primary mt-1 me-2 small"></i><span>Started as intern and grew to full-time role</span></li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <small class="text-uppercase text-muted fw-bold d-block mb-2" style="font-size: 0.7rem; letter-spacing: 0.5px;">Tech Stack</small>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-light text-secondary border">Java</span>
+                                    <span class="badge bg-light text-secondary border">Telecom</span>
+                                    <span class="badge bg-light text-secondary border">SIP</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,22 +250,28 @@
 
     <section id="education" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">Education</h2>
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">MCA (2009-2012)</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">BIT Mesra, Ranchi</h6>
-                            <p class="card-text">CGPA: 7.6</p>
+            <h2 class="text-center mb-5">Education</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-lift text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-graduation-cap fa-2x text-primary p-3 bg-light rounded-circle"></i>
                         </div>
+                        <h5 class="card-title mb-1">Master of Computer Applications</h5>
+                        <p class="text-primary fw-medium mb-2">BIT Mesra, Ranchi</p>
+                        <span class="badge bg-light text-dark border mb-3">2009 - 2012</span>
+                        <p class="card-text text-secondary">CGPA: 7.6</p>
                     </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">BCA (2005-2008)</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Integral University, Lucknow</h6>
-                            <p class="card-text">Percentage: 73.8%</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm hover-lift text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-university fa-2x text-primary p-3 bg-light rounded-circle"></i>
                         </div>
+                        <h5 class="card-title mb-1">Bachelor of Computer Applications</h5>
+                        <p class="text-primary fw-medium mb-2">Integral University, Lucknow</p>
+                        <span class="badge bg-light text-dark border mb-3">2005 - 2008</span>
+                        <p class="card-text text-secondary">Percentage: 73.8%</p>
                     </div>
                 </div>
             </div>
